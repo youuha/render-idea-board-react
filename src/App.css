@@ -1,0 +1,168 @@
+/* 헤더 */
+.board-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+.board-header p {
+  color: #666;
+}
+
+/* 입력 폼 */
+.form-section {
+  max-width: 640px;
+  margin: 0 auto 32px;
+}
+.idea-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+}
+.idea-form input,
+.idea-form select,
+.idea-form textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+.idea-form button {
+  padding: 10px;
+  background: #3b6cff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* 정렬 영역 */
+.sort-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 960px;
+  margin: 0 auto 16px;
+  padding: 12px 16px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+.sort-label {
+  font-weight: 600;
+  color: #333;
+}
+.sort-buttons {
+  display: flex;
+  gap: 8px;
+}
+.sort-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  background: white;
+  color: #555;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.sort-btn:hover {
+  border-color: #3b6cff;
+  color: #3b6cff;
+}
+.sort-btn.active {
+  background: #3b6cff;
+  color: white;
+  border-color: #3b6cff;
+}
+
+/* 카드 목록: 격자 배치 */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+/* 카드 한 장 */
+.card {
+  background: white;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+}
+.card-category {
+  display: inline-block;
+  background: #eef1ff;
+  color: #3b6cff;
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 999px;
+}
+.card-title {
+  margin: 8px 0 4px;
+}
+.card-desc {
+  flex: 1;
+  color: #555;
+}
+.card-delete-btn {
+  align-self: flex-end;
+  margin-top: 12px;
+  padding: 6px 12px;
+  background: white;
+  color: #e53935;
+  border: 1px solid #e53935;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+.card-delete-btn:hover {
+  background: #e53935;
+  color: white;
+
+
+/* 정렬 영역 전체 */
+.sort-section {
+  max-width: 960px;
+  margin: 0 auto 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 정렬 제목 */
+.sort-title {
+  font-weight: 600;
+  color: #333;
+}
+
+/* 정렬 버튼 묶음 */
+.sort-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+/* 정렬 버튼 */
+.sort-button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 14px;
+  border: 1px solid #d0d4dc;
+  background: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* 선택된 정렬 버튼 */
+.sort-button.active {
+  background: #3b6cff;
+  color: white;
+  border-color: #3b6cff;
+}
